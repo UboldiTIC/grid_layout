@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Modes</title>
+    <style>
+        .card {
+            background: #ffdada;
+            width: 300px;
+            height: 150px;
+            border-radius: 10px;
+            
+            /* Ocultar texto */
+
+            /* overflow: hidden; */
+
+            direction: ltr;
+            /* direction: rtl; */
+
+            /* https://developer.mozilla.org/es/docs/Web/CSS/direction */
+
+            writing-mode: horizontal-tb;
+            /* writing-mode: vertical-rl; */
+            /* writing-mode: vertical-lr; */
+
+            /* writing-mode: inherit; */
+            /* writing-mode: initial; */
+            /* writing-mode: unset; */
+
+            /* https://developer.mozilla.org/es/docs/Web/CSS/writing-mode */
+        }
+
+        .card__header {
+            background: #dbf6e9;
+            padding: 20px;
+        }
+
+        .card__main {
+            background: #9ddfd3;
+            padding: 20px;
+        }
+        .card__secondary p {
+            color: gray;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card__header">El curso de CSS Grid</div>
+        <div class="card__main">Ta muy bueno :3</div>
+        <div class="card__secondary">
+            <p>Estamos hablando del nuevo curso de Platzi. Espero ser capaz de recordar.</p>
+        </div>
+    </div>
+</body>
+</html>
