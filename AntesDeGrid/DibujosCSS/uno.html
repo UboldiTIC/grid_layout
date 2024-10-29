@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Dibujo</title>
+    <style>
+
+        /* Reto: 
+        https://dibujartecss.musarte.dev/
+        https://github.com/musartedev/dibujarte-css */
+
+
+        :root {
+            --skin: #f6c09c;
+            --background: #ed4042;
+            --red: #ed2860;
+            --dark-red: #680524;
+            --black: #00243a;
+            --white: #fff;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .head {
+            width: 100px;
+            height: 200px;
+            background: var(--skin);
+            border-radius: 50px;
+            position: relative;
+        }
+        .eye-left {
+            width: 20px;
+            height: 20px;
+            background: var(--white);
+            position: absolute;
+            top: 80px;
+            border-radius: 50px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+            <div class="nose"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</body>
+</html>
