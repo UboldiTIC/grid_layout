@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container_uno {
+            display: grid;
+            grid-template: repeat(5, 20px) / repeat(5, 20px);
+            column-gap: 5px;
+            row-gap: 5px;
+            background-color: aqua;
+        }
+        .container_dos {
+            display: grid;
+            grid-template: repeat(5, 20px) / repeat(5, 20px);
+            grid-template-areas: 
+                "header header header header  header"
+                "header header header header  header"
+                "main   main   .      sidebar sidebar"
+                "main   main   .      sidebar sidebar"
+                "footer footer footer footer  footer";
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container_uno"></div>
+    <div class="container_dos"></div>
+</body>
+</html>
