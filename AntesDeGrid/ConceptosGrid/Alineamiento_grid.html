@@ -20,6 +20,15 @@
             display: block;
             justify-self: center;
         }
+        p {
+            width: 35%;
+            height: 40%;
+            background-color: var(--section-items);
+            margin: 0;
+        }
+        h2 {
+            color: grey;
+        }
         .sections {
             width: 80vw;
             height: 80vh;
@@ -31,18 +40,37 @@
         .section-items {
             background: var(--section-items);
         }
+        .section-content {
+            background: var(--section-content);
+        }
         .containers {
             display: grid;
-            grid-template: repeat(2, 100px) / repeat(2, 100px);
-            
-        }
-        div {
             background: var(--grid-background);
+            border: 2px solid var(--border-color);
         }
-        div .container-item {
+        .container-one {
+            justify-items: start;
+            align-items: end;
+        }
+        .container-two {
+            place-items: center;
+        }
+        .container-three {
+            justify-items: end;
+            align-items: start;
+        }
+        .container-four {
+            place-items: end;
+        }
+        .container-five {
             display: grid;
-            grid-template: repeat(2, 100px) / repeat(2, 100px);
+            grid-template: repeat(2, 50%) / repeat(2, 50%);
+            justify-content: center;
+            align-content: end;
         }
+    
+    
+
         
         
        
@@ -50,58 +78,47 @@
 </head>
 <body>
     <main>
+        <h2>Section items</h2>
         <section class="sections section-items">
-            <div class="conteiners container-uno">
-                <div class="items"><p></p></div>
-                <div class="items"><p></p></div>
-                <div class="items"><p></p></div>
-                <div class="items"><p></p></div>
+            <div class="containers container-one">
+                <p></p>
             </div>
-            <div class="conteiners container-dos">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+            <div class="containers container-two">
+                <p></p>
             </div>
-            <div class="conteiners container-tres">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+            <div class="containers container-three">
+                <p></p>
             </div>
-            <div class="conteiners container-cuatro">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+            <div class="containers container-four">
+                <p></p>
             </div>
         </section>
-        <section class="sections section-content">
-            <div class="container-cinco">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+        <h2>Section content</h2>
+        <!-- <section class="sections section-content">
+            <div class="containers container-five">
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
             </div>
-            <div class="container-seis">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+            <div class="containers container-six">
+                <p></p>
             </div>
-            <div class="container-siete">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+            <div class="containers container-seven">
+                <p></p>
             </div>
-            <div class="container-ocho">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+            <div class="containers container-eight">
+                <p></p>
             </div>
-        </section>
+        </section> -->
     </main>
 </body>
 </html>
