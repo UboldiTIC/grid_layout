@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "card-1 card-2"
+        "card-1 card-3";
+    width: 80vw;
+    height: 90vh;
+    justify-self: center;
+}
+.item-one {
+    background: hotpink;
+    grid-area: card-1;
+}
+.item-two {
+    background: lightseagreen;
+    grid-row: card-2;
+}
+.item-three {
+    background: lightcoral;
+    grid-area: card-3;
+}
